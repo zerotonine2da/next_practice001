@@ -102,13 +102,13 @@
 }
 
 .layoutRightSection {
-    background-color: burlywood;
     width: 350px;
+    display: flex;
+    flex-direction: column;
 }
 
 .search {
     width: inherit;
-    background-color: aliceblue;
 }
 
 .searchZone {

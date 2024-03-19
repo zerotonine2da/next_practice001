@@ -1,0 +1,14 @@
+.trendSectionTrendBg {
+    background-color: #f7f9f9;
+    border-radius: 16px;
+    margin-top: 12px;
+}
+
+.trendSectionTrend {
+    padding: 12px 0;
+}
+
+.trendSectionTrend h3 {
+    margin-bottom: 12px;
+    padding: 0 16px;
+}
