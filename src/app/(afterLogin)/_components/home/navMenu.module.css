@@ -1,0 +1,23 @@
+.iconSelect {
+    display: flex;
+    height: 30px;
+    padding: 5px;
+    padding-bottom: 10px;
+    align-items: center;
+    gap: 15px;
+}
+
+.iconSelect:hover {
+    background-color: rgba(15, 20, 25, 0.1);
+    border-radius: 30px;
+}
+
+.iconSelect > div {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.customLink {
+    text-decoration: none;
+}
