@@ -8,6 +8,8 @@ import LogOutButton from './_components/button/LogOutButton';
 import TrendSection from './_components/homeRight/TrendSection';
 import FollowRecommend from './_components/homeRight/FollowRecommend';
 import { inherits } from 'util';
+import Tab from './home/_components/Tab';
+import HomePage from './home/page';
 
 export default function AfterLoginLayout({ children }: { children: ReactNode }) {
     return (
@@ -36,15 +38,7 @@ export default function AfterLoginLayout({ children }: { children: ReactNode }) 
                 <div className={style.rightContainer}>
                     <div className={style.rightContentInner}>
                         <main className={style.layoutMain}>
-                            <main className={style.homeMain}>
-                                <div className={style.tabHomeFixed}>
-                                    <div className={style.tabHomeText}>홈</div>
-                                    <div className={style.tabHomeTab}>
-                                        <div className={style.tabHomeRecommend}>추천</div>
-                                        <div className={style.tabHomeFollow}>팔로우중</div>
-                                    </div>
-                                </div>
-                            </main>
+                            <HomePage />
                         </main>
                         <section className={style.layoutRightSection}>
                             <div className={style.search}>

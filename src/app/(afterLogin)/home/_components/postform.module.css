@@ -1,0 +1,42 @@
+.postForm {
+    margin-top: 100px;
+    display: flex;
+    width: 100%;
+}
+
+.postUserSection {
+    width: 40px;
+    height: 40px;
+}
+.postUserImage {
+    width: 40px;
+    height: 40px;
+}
+
+.postUserImage > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+.postInputSection {
+    width: 100%;
+    flex: 1;
+}
+
+.postButtonSection {
+    display: flex;
+    justify-content: space-between;
+}
+
+.uploadButton {
+    border: none;
+    background-color: rgba(29, 155, 240, 0.01);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+}
+
+.actionButton {
+}
