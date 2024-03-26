@@ -1,3 +1,4 @@
+import Post from '../_components/common/Post';
 import PostForm from './_components/PostForm';
 import Tab from './_components/Tab';
 import TabProvider from './_components/TabProvider';
@@ -9,6 +10,10 @@ export default function HomePage() {
             <TabProvider>
                 <Tab />
                 <PostForm />
+                <Post />
+                <Post />
+                <Post />
+                <Post />
             </TabProvider>
         </main>
     );

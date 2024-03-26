@@ -5,7 +5,7 @@ import style from './postform.module.css';
 
 export default function PostForm() {
     const [content, setContent] = useState('');
-    const imageRef = useRef(null);
+    const imageRef = useRef<HTMLInputElement>(null);
 
     const me = {
         id: 'test',
@@ -19,7 +19,9 @@ export default function PostForm() {
         setContent(e.target.value);
     };
 
-    const onClickButton = () => {};
+    const onClickButton = () => {
+        imageRef.current?.click();
+    };
 
     return (
         <form className={style.postForm} onSubmit={onsubmit}>
