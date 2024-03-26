@@ -1,0 +1,13 @@
+.postActionButton {
+    display: flex;
+    justify-content: space-between;
+}
+
+.CommentButton {
+}
+
+.RepostButton {
+}
+
+.HeartButton {
+}

@@ -3,6 +3,7 @@ import style from './post.module.css';
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import 'dayjs/locale/ko';
+import PostActionButton from '../../home/_components/PostActionButton';
 
 dayjs.locale('ko');
 dayjs.extend(relativeTime);
@@ -38,11 +39,7 @@ export default function Post() {
                         </Link>
                     </div>
                     <div>{target.content}</div>
-                    <div className={style.postActionButton}>
-                        <div className={style.postCommentButton}>ㅇ</div>
-                        <div className={style.postRepostButton}>ㅇ</div>
-                        <div className={style.postHeartButton}>ㅇ</div>
-                    </div>
+                    <PostActionButton />
                 </div>
             </div>
         </article>
