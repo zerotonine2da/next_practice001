@@ -11,7 +11,12 @@ import { inherits } from 'util';
 import Tab from './home/_components/Tab';
 import HomePage from './home/page';
 
-export default function AfterLoginLayout({ children }: { children: ReactNode }) {
+type props = {
+    children: ReactNode;
+    modal: ReactNode;
+};
+
+export default function AfterLoginLayout({ children, modal }: props) {
     return (
         <div>
             <div className={style.container}>
@@ -63,7 +68,8 @@ export default function AfterLoginLayout({ children }: { children: ReactNode }) 
                     </div>
                 </div>
             </div>
-            {/* <div>{children}</div> */}
+            {/* {children} */}
+            {modal}
         </div>
     );
 }

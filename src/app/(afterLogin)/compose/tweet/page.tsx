@@ -1,3 +1,5 @@
-export default function page() {
-    return <div>compose</div>;
+import HomePage from '../../home/page';
+
+export default function Page() {
+    return <HomePage />;
 }
