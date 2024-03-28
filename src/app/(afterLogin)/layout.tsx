@@ -7,9 +7,7 @@ import zLogo from '../../../public/zlogo.png';
 import LogOutButton from './_components/button/LogOutButton';
 import TrendSection from './_components/homeRight/TrendSection';
 import FollowRecommend from './_components/homeRight/FollowRecommend';
-import { inherits } from 'util';
-import Tab from './home/_components/Tab';
-import HomePage from './home/page';
+import RightSearchZone from './_components/homeRight/RightSearchZone';
 
 type props = {
     children: ReactNode;
@@ -42,22 +40,9 @@ export default function AfterLoginLayout({ children, modal }: props) {
                 </header>
                 <div className={style.rightContainer}>
                     <div className={style.rightContentInner}>
-                        <main className={style.layoutMain}>
-                            <HomePage />
-                        </main>
+                        <main className={style.layoutMain}>{children}</main>
                         <section className={style.layoutRightSection}>
-                            <div className={style.search}>
-                                <div style={{ marginBottom: 60, width: 'inherits' }}>
-                                    <form className={style.searchZone}>
-                                        <svg width="20" viewBox="0 0 24 24" aria-hidden="true">
-                                            <g>
-                                                <path d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z"></path>
-                                            </g>
-                                        </svg>
-                                        <input type="search" name="search"></input>
-                                    </form>
-                                </div>
-                            </div>
+                            <RightSearchZone />
                             <div>
                                 <TrendSection />
                             </div>
@@ -68,7 +53,6 @@ export default function AfterLoginLayout({ children, modal }: props) {
                     </div>
                 </div>
             </div>
-            {/* {children} */}
             {modal}
         </div>
     );
