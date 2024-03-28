@@ -1,3 +1,3 @@
-export default function page() {
-    return <div>게시글</div>;
+export default function idPage() {
+    return <div>아이디페이지</div>;
 }

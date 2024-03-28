@@ -9,7 +9,7 @@ export default function NavMenu() {
     console.log(segment);
 
     const me: { id: string } = {
-        id: 'test',
+        id: 'test@test.com',
     };
 
     return (
